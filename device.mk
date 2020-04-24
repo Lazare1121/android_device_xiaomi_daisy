@@ -206,7 +206,11 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
+    libdisplayconfig.qti \
+    libdisplayconfig.vendor \
     libdisplayconfig.qti.vendor \
+    libqdMetaData \
+    libqdMetaData.vendor \
     libqdMetaData.system \
     libgenlock \
     libtinyxml \
@@ -501,6 +505,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libaacwrapper \
+    libnl \
+    libwfdaac
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
