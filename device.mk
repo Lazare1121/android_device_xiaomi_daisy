@@ -506,6 +506,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
+# Force disable blur
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=0
+
 # Charging
 PRODUCT_PACKAGES += \
     charger_res_images \
