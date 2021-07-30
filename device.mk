@@ -208,7 +208,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system \
     libgenlock \
-    libtinyxml
+    libtinyxml \
+    libvulkan
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
