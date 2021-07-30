@@ -206,10 +206,13 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
+    libdisplayconfig.qti.vendor \
     libqdMetaData.system \
     libgenlock \
     libtinyxml \
-    libvulkan
+    libvulkan \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
