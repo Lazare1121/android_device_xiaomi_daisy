@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Dex
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 
@@ -367,7 +371,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh
+    init.qcom.post_boot.sh \
+    init.camera.rc \
+    init.camera.sh
 
 PRODUCT_PACKAGES += \
     init.goodix.sh \
